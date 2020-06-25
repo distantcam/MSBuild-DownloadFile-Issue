@@ -1,0 +1,1 @@
+MSBuild DownloadFile Task causes Visual Studio 16.6 to hang.
