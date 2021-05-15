@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>msbuild_downloadfile</RootNamespace>
-    <FileUrl>https://releases.ubuntu.com/20.04/ubuntu-20.04-desktop-amd64.iso</FileUrl>
+    <FileUrl>https://releases.ubuntu.com/20.04/ubuntu-20.04.2.0-desktop-amd64.iso</FileUrl>
   </PropertyGroup>
 
-  <Target Name="DownloadExternalFile" BeforeTargets="BeforeCompile">
+  <Target Name="DownloadExternalFile" BeforeTargets="BeforeBuild">
     <DownloadFile
       SourceUrl="$(FileUrl)"
       DestinationFolder="$(BaseIntermediateOutputPath)\Download">
